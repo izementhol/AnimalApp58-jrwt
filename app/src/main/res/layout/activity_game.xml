@@ -25,8 +25,9 @@
         android:layout_height="123dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toStartOf="@+id/imbVolumn"
+        app:layout_constraintHorizontal_bias="0.287"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/bird" />
@@ -36,7 +37,7 @@
         android:layout_width="71dp"
         android:layout_height="68dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginEnd="348dp"
         android:layout_marginTop="8dp"
         android:adjustViewBounds="false"
         android:background="@null"
@@ -46,14 +47,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/imvQuestion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imvQuestion"
+        app:layout_constraintVertical_bias="0.641"
         app:srcCompat="@drawable/volume" />
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:onClick="choiceAns"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imvQuestion" />
@@ -62,7 +65,8 @@
         android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="24dp"
+        android:onClick="choiceAns"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="@+id/btn1"
         app:layout_constraintStart_toEndOf="@+id/btn1" />
@@ -71,7 +75,8 @@
         android:id="@+id/btn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
+        android:onClick="choiceAns"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="@+id/btn2"
         app:layout_constraintStart_toEndOf="@+id/btn2" />
@@ -85,5 +90,6 @@
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="@+id/btn3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/btn3" />
 </android.support.constraint.ConstraintLayout>
